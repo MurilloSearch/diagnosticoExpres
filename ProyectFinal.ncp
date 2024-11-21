@@ -1,0 +1,177 @@
+<Project>
+  <Name>ProyectFinal</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.ClassDiagram" assembly="NClass.DiagramEditor, Version=2.8.0.2, Culture=neutral, PublicKeyToken=null">
+    <Name>ProyectoFinal</Name>
+    <Language>Java</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>Super_Paciente</Name>
+        <Access>Public</Access>
+        <Location left="595" top="13" />
+        <Size width="211" height="604" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">protected String nombre</Member>
+        <Member type="Field">protected String apellidoPat</Member>
+        <Member type="Field">protected String apellidoMat</Member>
+        <Member type="Field">protected String medicamento</Member>
+        <Member type="Field">protected int edad</Member>
+        <Member type="Field">protected int frecuenciaC</Member>
+        <Member type="Field">protected int frecuenciaR</Member>
+        <Member type="Field">protected int presionArterialS</Member>
+        <Member type="Field">protected int presionArterialD</Member>
+        <Member type="Field">protected float temperatura</Member>
+        <Member type="Constructor">public Super_Paciente(String nombre, String apellidoPat, String apellidoMat, int edad, int frecuenciaC, int frecuenciaR, int presionArterialS, int presionArterialD, float temperatura)</Member>
+        <Member type="Method">abstract void setMedicamento()</Member>
+        <Member type="Method">public void setNombre(String nombre)</Member>
+        <Member type="Method">public void setApellidoPat(String apellidoPat)</Member>
+        <Member type="Method">public void setApellidoMat(String apellidoMat)</Member>
+        <Member type="Method">public void setEdad(int edad)</Member>
+        <Member type="Method">public void setFrecuenciaC(int frecuenciaC)</Member>
+        <Member type="Method">public void setFrecuenciaR(int frecuenciaR)</Member>
+        <Member type="Method">public void setPresionArterialS(int presionArterialS)</Member>
+        <Member type="Method">public void setPresionArterialD(int presionArterialD)</Member>
+        <Member type="Method">public void setTemperatura(float temperatura)</Member>
+        <Member type="Method">public String getNombre()</Member>
+        <Member type="Method">public String getApellidoPat()</Member>
+        <Member type="Method">public String getApellidoMat()</Member>
+        <Member type="Method">public int getEdad()</Member>
+        <Member type="Method">public int getFrecuenciaC()</Member>
+        <Member type="Method">public int getFrecuenciaR()</Member>
+        <Member type="Method">public int getPresionArterialS()</Member>
+        <Member type="Method">public int getPresionArterialD()</Member>
+        <Member type="Method">public double getTemperatura()</Member>
+        <Member type="Method">public String getMedicamento()</Member>
+        <Modifier>Abstract</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Paciente_Otros_Clase_Derivada</Name>
+        <Access>Public</Access>
+        <Location left="955" top="379" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private String medicamento_Pediatrico</Member>
+        <Member type="Field">private String medicamento_Mayor60</Member>
+        <Member type="Field">private int medicamento_parametros_alterados</Member>
+        <Member type="Constructor">public Paciente_Otros_Clase_Derivada()</Member>
+        <Member type="Constructor">public Paciente_Otros_Clase_Derivada(String nombre, String apellidoPat, String apellidoMat, int edad, int frecuenciaC, int frecuenciaR, int presionArterialS, int presionArterialD, float temperatura)</Member>
+        <Member type="Method">void setMedicamento()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Paciente_Respiratorio_Clase_Derivada</Name>
+        <Access>Public</Access>
+        <Location left="298" top="351" />
+        <Size width="162" height="281" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private int escurrimientoNasal</Member>
+        <Member type="Field">private int tos</Member>
+        <Member type="Field">private int dolorGarganta</Member>
+        <Member type="Constructor">public Paciente_Respiratorio_Clase_Derivada()</Member>
+        <Member type="Constructor">public Paciente_Respiratorio_Clase_Derivada(String nombre, String apellidoPat, String apellidoMat, int edad, int frecuenciaC, int frecuenciaR, int presionArterialS, int presionArterialD, float temperatura, int escurrimientoNasal, int tos, int dolorGarganta)</Member>
+        <Member type="Method">public void setEscurrimientoNasal(int Nasal)</Member>
+        <Member type="Method">public void setTos(int tos)</Member>
+        <Member type="Method">public void setDolorGarganta(int dolorGarganta)</Member>
+        <Member type="Method">void setMedicamento()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Paciente_Urinario_Clase_Derivada</Name>
+        <Access>Public</Access>
+        <Location left="298" top="35" />
+        <Size width="162" height="281" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private int dolorOrinarBox</Member>
+        <Member type="Field">private int diebreBox</Member>
+        <Member type="Field">private int dolorIntensoBox</Member>
+        <Member type="Constructor">public Paciente_Urinario_Clase_Derivada()</Member>
+        <Member type="Constructor">public Paciente_Urinario_Clase_Derivada(String nombre, String apellidoPat, String apellidoMat, int edad, int frecuenciaC, int frecuenciaR, int presionArterialS, int presionArterialD, float temperatura, int dolorAlOrinar, int fiebre, int dolorIntenso)</Member>
+        <Member type="Method">public void setDolorOrinar(int DolorOrinarBox)</Member>
+        <Member type="Method">public void setFiebre(int FiebreBox)</Member>
+        <Member type="Method">public void setDolorIntenso(int DolorIntensoBox)</Member>
+        <Member type="Method">void setMedicamento()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>menuFRM</Name>
+        <Access>Public</Access>
+        <Location left="614" top="686" />
+        <Size width="162" height="94" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">public void main()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Paciente_Estomacal_Clase_Derivada</Name>
+        <Access>Public</Access>
+        <Location left="955" top="46" />
+        <Size width="162" height="281" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private int diarrea</Member>
+        <Member type="Field">private int vomito</Member>
+        <Member type="Field">private int colico</Member>
+        <Member type="Constructor">public Paciente_Estomacal_Clase_Derivada()</Member>
+        <Member type="Constructor">public Paciente_Estomacal_Clase_Derivada(String nombre, String apellidoPat, String apellidoMat, int edad, int frecuenciaC, int frecuenciaR, int presionArterialS, int presionArterialD, float temperatura, int Diarrea, int Vomito, int Colico)</Member>
+        <Member type="Method">public void setDiarrea(int diarreaBox)</Member>
+        <Member type="Method">public void setVomito(int vomitoBox)</Member>
+        <Member type="Method">public void setColico(int colicoBox)</Member>
+        <Member type="Method">void setMedicamento()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Containers />
+    <Relationships>
+      <Relationship type="Generalization" first="3" second="0">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="2" second="0">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="5" second="0">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="1" second="0">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="4" second="1">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>1043</X>
+          <Y>654</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Dependency" first="4" second="2">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="4" second="5">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>798</X>
+          <Y>649</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>896</X>
+          <Y>362</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Dependency" first="4" second="3">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>558</X>
+          <Y>647</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>496</X>
+          <Y>337</Y>
+        </BendPoint>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>
